@@ -37,7 +37,10 @@ for (let member of team) {
   console.log("Nome: ", member.name);
   console.log("Ruolo: ", member.role);
   console.log("Image: ", member.image);
-  messagehtml = member.name + " " + member.role + " " + member.image + "<br>";
-  console.log(messagehtml);
+  // MILESTONE 2  messagehtml = member.name + " " + member.role + " " + member.image + "<br>";
+  messagehtml = `
+  <img src="./img/${member.image}" alt="">
+  <h3>${member.name}</h3>
+  <p>${member.role}</p>`;
   container.innerHTML += messagehtml;
 }
