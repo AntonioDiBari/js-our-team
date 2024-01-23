@@ -30,3 +30,14 @@ const team = [
     image: "barbara-ramos-graphic-designer.jpg",
   },
 ];
+
+const container = document.getElementById("card-container");
+
+for (let member of team) {
+  console.log("Nome: ", member.name);
+  console.log("Ruolo: ", member.role);
+  console.log("Image: ", member.image);
+  messagehtml = member.name + " " + member.role + " " + member.image + "<br>";
+  console.log(messagehtml);
+  container.innerHTML += messagehtml;
+}
